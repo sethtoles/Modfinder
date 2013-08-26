@@ -1,0 +1,19 @@
+Loop through users that have more than x answers (i){
+	get all question responses
+	loop through every other user with more than x answers (j){
+		get all question responses
+		if the union of the question ids of the responses has a length greater than y{
+			//there's enough
+			var matchSet = []
+			loop through the those records for which they both answered{
+				if(i.answer === j.answer)
+					answer = 1;
+				else
+					answer = -1
+				matchSet.push(answer * i.importance)
+			}
+			get average of matchSet
+			record in user i the matchSet average (should be somewhere between 0 and 1)
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "mfMatcher",
+	"version": "0.0.1",
+	"descripton": "modfinder matching algorithm",
+	"dependencies": {
+		"mysql": "*",
+		"underscore": "*"
+	}
+}
